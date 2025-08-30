@@ -51,6 +51,7 @@ export default function CompletePage() {
               <CheckCircle className="w-16 h-16 text-green-500" />
             </div>
             <CardTitle className="text-2xl font-bold text-white">Survey Complete!</CardTitle>
+            <Link href="https://app.prolific.com/submissions/complete?cc=C17FILW9"><Button>Click to go back</Button></Link>
             <p className="text-gray-300">Thank you for your valuable contribution to our AI research.</p>
           </CardHeader>
           <CardContent className="space-y-6">
