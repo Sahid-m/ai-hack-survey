@@ -5,6 +5,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useSurvey } from "@/lib/survey-context"
 import { DataExport } from "@/components/data-export"
 import { CheckCircle, Loader2, AlertCircle, Database } from "lucide-react"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export default function CompletePage() {
   const { surveyData, dispatch, saveSurveyToDatabase, isLoading, error } = useSurvey()
