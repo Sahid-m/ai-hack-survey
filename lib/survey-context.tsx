@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { createContext, useContext, useReducer, useEffect, useState } from "react"
+import { createContext, useContext, useEffect, useReducer, useState } from "react"
 
 export interface BoundingBox {
   x: number
@@ -79,16 +79,25 @@ interface SurveyContextType {
 const SurveyContext = createContext<SurveyContextType | undefined>(undefined)
 
 const ANNOTATION_IMAGES = [
-  "/street-scene-with-cars-and-people.png",
-  "/office-workspace-with-computer-and-desk.png",
-  "/park-with-trees-and-benches.png",
+  "/1.png",
+  "/2.png",
+  "/3.png",
+  "/4.png",
+  "/5.png",
+  "/6.png",
+  "/7.png",
+  "/8.png",
 ]
 
 const CLASSIFICATION_IMAGES = [
-  "/ai-generated-landscape-with-mountains.png",
-  "/ai-generated-portrait-of-a-person.png",
-  "/ai-abstract-art.png",
-  "/ai-generated-cityscape-at-night.png",
+  "/1.png",
+  "/2.png",
+  "/3.png",
+  "/4.png",
+  "/5.png",
+  "/6.png",
+  "/7.png",
+  "/8.png",
 ]
 
 const createInitialState = (): SurveyData => ({
